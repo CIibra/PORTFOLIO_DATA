@@ -2,90 +2,9 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio – Ib, Data Analyst</title>
+  <title>Accueil – Ib, Data Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f6f8;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    h2 {
-      color: #2c3e50;
-      margin-top: 40px;
-      text-align: center;
-    }
-    .section {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    .project {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .gallery img {
-      width: 45%;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #2c3e50;
-      color: white;
-      margin-top: 40px;
-    }
-    a {
-      color: #3498db;
-      text-decoration: none;
-    }
-	.project-link {
-	  display: inline-block;
-	  margin-top: 10px;
-	  margin-right: 10px;
-	  padding: 8px 14px;
-	  background-color: #3498db;
-	  color: white;
-	  border-radius: 6px;
-	  text-decoration: none;
-	  font-weight: bold;
-	  transition: background-color 0.3s ease;
-	}
-	.project-link:hover {
-	  background-color: #2980b9;
-	}
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -94,52 +13,28 @@
   <p>Spécialiste de la transformation des données brutes en informations utiles pour la prise de décision</p>
 </header>
 
+<nav>
+  <a href="index.html" class="active">🏠 Accueil</a>
+  <a href="projets.html">📊 Projets</a>
+  <a href="codes.html">📂 Codes Sources</a>
+  <a href="publications.html">📄 Publications</a>
+</nav>
+
 <div class="section">
-  <h2>📌 Compétences</h2>
-  <ul>
-    <li>Python (Pandas, NumPy, Scikit-learn, Streamlit)</li>
-    <li>Power BI, Plotly, Folium</li>
-    <li>Scraping via API, Machine Learning</li>
-    <li>Modélisation, KPI, visualisation interactive</li>
-  </ul>
+  <h2>🏠 Bienvenue</h2>
+  <p>
+	  Bienvenue sur mon portfolio de data analyst. Vous y trouverez une sélection de 
+	  projets interactifs, des scripts Python & SQL, ainsi que des ressources techniques. 
+  </p>
+  <p>
+     Mon objectif : transformer les données en outils clairs, utiles et
+     reproductibles pour la prise de décision.
+  </p>
 
-  <h2>📊 Projets</h2>
-
-  <div class="project">
-    <h3>Application de Prédiction de la Qualité de l’Air</h3>
-    <p>Scraping via API, machine learning, Streamlit, extraction de KPI et cartographie dynamique.</p>
-	<a class="project-link" href="https://airquality-cpyyna2hs8daappq7kvgvb3.streamlit.app/" target="_blank">🌐 Voir l'application</a>
-  
-  <div class="gallery">
-    <img src="Projet1_1.png" alt="Projet 1">
-    <img src="Projet1_2.png" alt="Projet 1"> 
-  </div>
-  </div>
-
-  <div class="project">
-    <h3>Analyse des Flux Voyageurs SNCF </h3>
-    <p>Application Python & Streamlit pour visualiser les flux par gare et région.</p>
-	<a class="project-link" href="https://transpovision-nc7kixy29eu2chbvgbmstg.streamlit.app/" target="_blank">🌐 Voir l'application</a>
-	
-	<div class="gallery">
-	  <img src="Projet2_1.png" alt="Projet 2">
-	  <img src="Projet2_2.png" alt="Projet 2"> 
-	</div>
-  </div>
-  <div class="project">
-    <h3>Tableau de bord des ventes régionales – Power BI</h3>
-    <p>Modélisation en étoile, DAX, cartes interactives, publication sécurisée.</p>
-	<a class="project-link" href="https://drive.google.com/file/d/1l2aM-Vio7G-9NiANMTMfMIIt6MgtUJSt/view" target="_blank">🌐 Voir le PDF</a>
-    <div class="gallery">
-      <img src="Projet3_1.png" alt="Projet 3">
-      <img src="Projet3_2.png" alt="Projet 3"> 
-	</div>
-  </div> 
-  
 </div>
 
 <footer>
-  <p>📧 ib.email@example.com | 📱 +33 6 XX XX XX XX | 🔗 <a href="https://github.com/ib-data">GitHub</a></p>
+  <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>   📱 +33 7 65 62 16 11 </p>
 </footer>
 
 </body>
