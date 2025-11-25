@@ -479,9 +479,7 @@ footer a:hover {
     margin-top: auto;
 }
 
-.code-download {
-    background: #3498db;  
-    color: black; 
+.code-download { 
     padding: 10px 16px;
     border-radius: 8px;
     font-weight: 600;
@@ -522,6 +520,7 @@ footer a:hover {
         max-width: 500px;
     }
 }
+
 
 
 
