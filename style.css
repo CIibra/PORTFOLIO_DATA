@@ -197,25 +197,25 @@ footer a:hover {
 }
 
 /* ------------------------------------------------------------------ */
-/* --- 8. Codes Sources - NOUVEAU STYLE (Vert Élégant) - MODIFIÉ --- */
+/* --- 8. Codes Sources - NOUVEAU STYLE (Vert Élégant) - FINALISÉ --- */
 /* ------------------------------------------------------------------ */
 
 /* La grille principale */
 .code-grid {
     display: grid;
-    /* Ajuster pour 3 colonnes sur grand écran */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 30px; /* Augmenter l'espace entre les blocs */
+    gap: 30px; 
     padding: 10px 0;
 }
 
 /* Le bloc individuel (la "carte") */
 .code-block-group {
     background: #ffffff; 
-    padding: 25px; 
+    /* Padding ajusté pour un fond plus fin (25px haut/côtés, 15px bas) */
+    padding: 25px 25px 15px; 
     border-radius: 12px;
-    border: 1px solid #e0e4e8; /* Fine bordure pour délimiter */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Ombre très subtile */
+    border: 1px solid #e0e4e8; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -226,16 +226,17 @@ footer a:hover {
 .code-block-group:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    border-color: #1abc9c; /* Bordure colorée au survol (Vert) */
+    border-color: #1abc9c; 
 }
 
 /* Titre du bloc de code */
 .code-block-group h4 {
     font-size: 1.15em;
     color: #2c3e50; 
-    margin-bottom: 20px;
+    /* Marge réduite pour coller aux boutons */
+    margin-bottom: 10px; 
     line-height: 1.4;
-    border-left: 3px solid #1abc9c; /* Ligne verte fine */
+    border-left: 3px solid #1abc9c; 
     padding-left: 12px;
     font-weight: 600;
 }
@@ -244,9 +245,10 @@ footer a:hover {
 .button-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px; /* Espacement entre les boutons */
+    gap: 12px; 
     margin-top: auto; 
-    padding-top: 15px; 
+    /* Padding supérieur supprimé pour coller au titre */
+    padding-top: 0; 
 }
 
 /* Style des boutons/liens de téléchargement */
@@ -274,5 +276,3 @@ footer a:hover {
 .button-row div {
     display: none; 
 }
-
-/* Fin du CSS mis à jour */
