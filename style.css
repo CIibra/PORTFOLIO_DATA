@@ -83,7 +83,7 @@ nav a.active {
     text-align: left;
 }
 
-/* --- 4. LISTES --- */
+/* --- 4. LISTES (GÉNÉRALES) --- */
 .section ul {
     list-style-type: none;
     padding: 0;
@@ -115,7 +115,7 @@ nav a.active {
     }
 }
 
-/* --- 5. LIENS --- */
+/* --- 5. LIENS (GÉNÉRAUX) --- */
 a {
     color: #3498db;
     text-decoration: none;
@@ -160,7 +160,7 @@ footer a:hover {
     text-decoration: none;
 }
 
-/* --- 7. STYLES SPÉCIFIQUES --- */
+/* --- 7. STYLES SPÉCIFIQUES (Projets/Galerie) --- */
 .project {
     background: white;
     padding: 20px;
@@ -196,65 +196,83 @@ footer a:hover {
     background-color: #2980b9;
 }
 
-/* --- 8. Codes Sources --- */
+/* ------------------------------------------------------------------ */
+/* --- 8. Codes Sources - NOUVEAU STYLE (Vert Élégant) - MODIFIÉ --- */
+/* ------------------------------------------------------------------ */
+
+/* La grille principale */
 .code-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
+    /* Ajuster pour 3 colonnes sur grand écran */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; /* Augmenter l'espace entre les blocs */
+    padding: 10px 0;
 }
 
+/* Le bloc individuel (la "carte") */
 .code-block-group {
-    background: linear-gradient(135deg, #f9fafb, #f3f4f6);
-    padding: 24px 20px;
+    background: #ffffff; 
+    padding: 25px; 
     border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    border: 1px solid #e0e4e8; /* Fine bordure pour délimiter */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Ombre très subtile */
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .code-block-group:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-color: #1abc9c; /* Bordure colorée au survol (Vert) */
 }
 
+/* Titre du bloc de code */
 .code-block-group h4 {
-    font-size: 1.1em;
-    color: #1f2937;
-    margin-bottom: 16px;
+    font-size: 1.15em;
+    color: #2c3e50; 
+    margin-bottom: 20px;
     line-height: 1.4;
-    border-left: 4px solid #3498db;
-    padding-left: 10px;
+    border-left: 3px solid #1abc9c; /* Ligne verte fine */
+    padding-left: 12px;
+    font-weight: 600;
 }
 
+/* Conteneur des boutons de téléchargement */
 .button-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: auto;
+    gap: 12px; /* Espacement entre les boutons */
+    margin-top: auto; 
+    padding-top: 15px; 
 }
 
+/* Style des boutons/liens de téléchargement */
 .code-download {
-    background: #3498db;
+    background: #1abc9c; /* VERT PRINCIPAL */
     color: #ffffff;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-weight: 600;
+    padding: 8px 14px; 
+    border-radius: 6px; 
+    font-weight: 500;
     text-decoration: none;
     transition: background 0.3s ease, transform 0.2s ease;
-    display: inline-block;
+    display: inline-flex; 
+    align-items: center;
+    font-size: 0.9em;
 }
 
+/* Hover du bouton */
 .code-download:hover {
-    background: #2563eb;
-    transform: scale(1.05);
+    background: #16a085; /* VERT AU SURVOL */
+    transform: translateY(-1px);
+    text-decoration: none; 
 }
 
-@media screen and (max-width: 1000px) {
-    .code-block-group {
-        width: 100%;
-        max-width: 500px;
-    }
+/* Fix pour l'élément div vide dans le HTML */
+.button-row div {
+    display: none; 
 }
+
+/* Fin du CSS mis à jour */
