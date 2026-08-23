@@ -1,108 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Projets – Ib, Data Analyst</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Projets Data & IA — Ibrahim Cissé</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header><header>
-  <h1>CISSE Ibrahim – Data analyst - IA & Automatisations</h1>
-  <p>Spécialiste Data - IA & automatisations, je conçois des outils pratiques et pédagogiques qui simplifient la gestion et la prise de décision.</p>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">IC</span>
+      <span class="brand-text">
+        <span class="brand-name">Ibrahim Cissé</span>
+        <span class="brand-role">Data · IA · Développement</span>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html" class="active">Projets Data & IA</a>
+      <a href="developpement.html">Développement Web & Mobile</a>
+      <a href="codes.html">Codes sources</a>
+      <a href="publications.html">Publications</a>
+    </nav>
+  </div>
 </header>
 
-</header>
+<main>
 
-<nav>
-  <a href="index.html">🏠 Accueil</a>
-  <a href="projets.html" class="active">📊 Projets</a>
-  <a href="codes.html">📂 Codes Sources</a>
-  <a href="publications.html">📄 Publications</a>
-</nav>
-
-<div class="section">
-  <h2>📊 Projets</h2>
-
-  <div class="project">
-    <h3>Analyse de performance commerciale et stratégie produit – Secteur numérique </h3>
-    <p>Evaluation des performances  des ventes dans le secteur numérique afin de proposer des actions concrètes pour améliorer la rentabilité et la couverture du marché.</p>
-    <a class="project-link" href="projet_ventes_numeriques.html" target="">🌐 Voir le projet complet</a>
-    <div class="gallery">
-      <img src="ca_global.png" alt="Projet 0">
-      <img src="part_categorie.png" alt="Projet 0"> 
+  <section class="hero" style="padding-bottom:56px;">
+    <div class="hero-inner">
+      <span class="eyebrow">Portefeuille de projets</span>
+      <h1>Projets Data & <em>Intelligence Artificielle</em></h1>
+      <p class="lede">Études de cas en analyse de données, machine learning et automatisation — de la préparation des données à la restitution décisionnelle.</p>
     </div>
-    <div class="gallery">
-      <img src="heatmap_region_equipe.png" alt="Projet 0">
-      <img src="evolution_ca_ma3.png" alt="Projet 0"> 
+  </section>
+
+  <section class="section">
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="project-index">Étude 01</span>
+          <div class="project-tags"><span>Business Intelligence</span><span>Analyse commerciale</span></div>
+          <h3>Analyse de performance commerciale et stratégie produit — Secteur numérique</h3>
+          <p class="desc">Évaluation des performances des ventes dans le secteur numérique afin de proposer des actions concrètes pour améliorer la rentabilité et la couverture du marché.</p>
+          <div class="project-links">
+            <a class="project-link" href="projet_ventes_numeriques.html">🌐 Voir le projet complet</a>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="ca_global.png" alt="Chiffre d'affaires global — projet ventes numériques">
+          <img src="part_categorie.png" alt="Part par catégorie — projet ventes numériques">
+        </div>
+        <div class="gallery">
+          <img src="heatmap_region_equipe.png" alt="Heatmap région / équipe — projet ventes numériques">
+          <img src="evolution_ca_ma3.png" alt="Évolution du CA (moyenne mobile) — projet ventes numériques">
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="project-index">Étude 02</span>
+          <div class="project-tags"><span>Machine Learning</span><span>Santé</span></div>
+          <h3>Analyse de données médicales par Machine Learning</h3>
+          <div class="project-links">
+            <a class="project-link" href="ml_medical.html">🌐 Voir le projet complet</a>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="medi_1.png" alt="Projet analyse médicale 1">
+          <img src="medi_2.png" alt="Projet analyse médicale 2">
+        </div>
+        <div class="gallery">
+          <img src="medi_3.png" alt="Projet analyse médicale 3">
+          <img src="medi_4.png" alt="Projet analyse médicale 4">
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="project-index">Étude 03</span>
+          <div class="project-tags"><span>Machine Learning</span><span>Streamlit</span><span>API</span></div>
+          <h3>Application de Prédiction de la Qualité de l'Air</h3>
+          <p class="desc">Scraping via API, machine learning, Streamlit, extraction de KPI et cartographie dynamique.</p>
+          <div class="project-links">
+            <a class="project-link" href="https://airquality-cpyyna2hs8daappq7kvgvb3.streamlit.app/" target="_blank" rel="noopener">🌐 Voir l'application</a>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="Projet1_1.png" alt="Application qualité de l'air — vue 1">
+          <img src="Projet1_2.png" alt="Application qualité de l'air — vue 2">
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="project-index">Étude 04</span>
+          <div class="project-tags"><span>IA conversationnelle</span></div>
+          <h3>Chatbot visuel qui répond aux questions présentes dans une FAQ</h3>
+        </div>
+        <div class="gallery">
+          <img src="chat1.png" alt="Chatbot FAQ — vue 1">
+          <img src="chat2.png" alt="Chatbot FAQ — vue 2">
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="project-index">Étude 05</span>
+          <div class="project-tags"><span>Streamlit</span><span>Data Visualisation</span></div>
+          <h3>Analyse des Flux Voyageurs SNCF</h3>
+          <p class="desc">Application Python & Streamlit pour visualiser les flux par gare et région.</p>
+          <div class="project-links">
+            <a class="project-link" href="https://transpovision-nc7kixy29eu2chbvgbmstg.streamlit.app/" target="_blank" rel="noopener">🌐 Voir l'application</a>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="Projet2_1.png" alt="Flux voyageurs SNCF — vue 1">
+          <img src="Projet2_2.png" alt="Flux voyageurs SNCF — vue 2">
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="project-index">Étude 06</span>
+          <div class="project-tags"><span>Power BI</span><span>DAX</span></div>
+          <h3>Tableau de bord des ventes régionales — Power BI</h3>
+          <p class="desc">Modélisation en étoile, DAX, cartes interactives, publication sécurisée.</p>
+          <div class="project-links">
+            <a class="project-link" href="https://drive.google.com/file/d/1l2aM-Vio7G-9NiANMTMfMIIt6MgtUJSt/view" target="_blank" rel="noopener">🌐 Voir le PDF</a>
+          </div>
+        </div>
+        <div class="gallery">
+          <img src="Projet3_1.png" alt="Dashboard ventes régionales — vue 1">
+          <img src="Projet3_2.png" alt="Dashboard ventes régionales — vue 2">
+        </div>
+      </article>
+
     </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-contact">
+      <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>
+      <span class="footer-phone">📱 +33 7 65 62 16 11</span>
+    </div>
+    <span class="footer-index">Dossier — 02 / 05</span>
   </div>
-
-  <div class="project">
-    <h3> Analyse de données médicales par Machine Learning </h3> 
-    <a class="project-link" href="ml_medical.html" target="">🌐 Voir le projet complet</a>
-    <div class="gallery">
-      <img src="medi_1.png" alt="Projet 0">
-      <img src="medi_2.png" alt="Projet 0"> 
-    </div> 
-    <div class="gallery">
-      <img src="medi_3.png" alt="Projet 0">
-      <img src="medi_4.png" alt="Projet 0"> 
-    </div> 
-  </div>
-  <div class="project">
-    <h3>Application de Prédiction de la Qualité de l’Air</h3>
-    <p>Scraping via API, machine learning, Streamlit, extraction de KPI et cartographie dynamique.</p>
-    <a class="project-link" href="https://airquality-cpyyna2hs8daappq7kvgvb3.streamlit.app/" target="_blank">🌐 Voir l'application</a>
-    <div class="gallery">
-      <img src="Projet1_1.png" alt="Projet 1">
-      <img src="Projet1_2.png" alt="Projet 1"> 
-    </div>
-  </div>  
-  <div class="project">
-    <h3>Chatbot visuel bqui répond aux questions présents dans une FAQ</h3> 
-    <div class="gallery">
-      <img src="chat1.png" alt="Projet 1">
-      <img src="chat2.png" alt="Projet 1"> 
-    </div>
-  </div>
-
-  <div class="project">
-    <h3>Analyse des Flux Voyageurs SNCF</h3>
-    <p>Application Python & Streamlit pour visualiser les flux par gare et région.</p>
-    <a class="project-link" href="https://transpovision-nc7kixy29eu2chbvgbmstg.streamlit.app/" target="_blank">🌐 Voir l'application</a>
-    <div class="gallery">
-      <img src="Projet2_1.png" alt="Projet 2">
-      <img src="Projet2_2.png" alt="Projet 2"> 
-    </div>
-  </div>
-
-  <div class="project">
-    <h3>Tableau de bord des ventes régionales – Power BI</h3>
-    <p>Modélisation en étoile, DAX, cartes interactives, publication sécurisée.</p>
-    <a class="project-link" href="https://drive.google.com/file/d/1l2aM-Vio7G-9NiANMTMfMIIt6MgtUJSt/view" target="_blank">🌐 Voir le PDF</a>
-    <div class="gallery">
-      <img src="Projet3_1.png" alt="Projet 3">
-      <img src="Projet3_2.png" alt="Projet 3"> 
-    </div>
-  </div>
-</div>
-
-<footer>
-  <p>📧 <a class="email-link" href="mailto:ibrahim.cisse@ensam.eu">ibrahim.cisse@ensam.eu</a>  📱 +33 7 65 62 16 11 </p>
 </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
