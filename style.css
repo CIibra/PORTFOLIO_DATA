@@ -555,8 +555,11 @@ main { flex: 1; }
 
 .gallery img {
   width: 100%;
-  height: 230px;
-  object-fit: cover;
+  height: 260px;
+  object-fit: contain;
+  background: var(--white);
+  padding: 10px;
+  box-sizing: border-box;
   border-radius: 6px;
   border: 1px solid var(--line);
   box-shadow: 0 6px 18px rgba(10, 26, 48, 0.09);
